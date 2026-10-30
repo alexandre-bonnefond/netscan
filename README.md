@@ -100,3 +100,7 @@ Tests: `python3 -m unittest discover tests`.
    one command on several devices (one tmux pane per device with synchronized input).
 5. Later: alert when a device appears or disappears, CPU and temperature over SSH, Wi-Fi
    signal in dBm, a bar block with the number of devices.
+
+## License
+
+MIT, see `LICENSE`.
