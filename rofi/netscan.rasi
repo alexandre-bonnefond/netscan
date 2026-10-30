@@ -1,0 +1,37 @@
+/* netscan rofi menu: ubuntu-setup's list menu, wider, with a tab per subnet (like its cheatsheet) */
+
+@import "~/.config/rofi/menu-list.rasi"
+
+window {
+ width: 860px;
+}
+
+mainbox {
+ children: [ inputbar, mode-switcher, listview, message ];
+}
+
+listview {
+ fixed-height: true;
+ spacing: 2px;
+}
+
+element {
+ padding: 5px 14px;
+}
+
+mode-switcher {
+ spacing: 6px;
+}
+
+button {
+ padding: 6px 10px;
+ border-radius: 8px;
+ background-color: @background-element;
+ text-color: @muted;
+ cursor: pointer;
+}
+
+button selected {
+ background-color: @selected;
+ text-color: @foreground;
+}
